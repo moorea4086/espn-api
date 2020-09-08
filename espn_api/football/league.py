@@ -16,7 +16,8 @@ from .constant import POSITION_MAP, ACTIVITY_MAP
 
 class League(BaseLeague):
     '''Creates a League instance for Public/Private ESPN league'''
-    def __init__(self, league_id: int, year: int, espn_s2=None, swid=None, username=None, password=None, debug=False):
+
+    def __init__(self, league_id: int, year: int, espn_s2: str, swid: str, username=None, password=None, debug=False):
         super().__init__(league_id=league_id, year=year, sport='nfl', espn_s2=espn_s2, swid=swid, username=username, password=password, debug=debug)
         self._fetch_league()
 

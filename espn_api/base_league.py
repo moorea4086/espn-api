@@ -7,6 +7,7 @@ from .requests.espn_requests import EspnFantasyRequests
 
 class BaseLeague(ABC):
     '''Creates a League instance for Public/Private ESPN league'''
+
     def __init__(self, league_id: int, year: int, sport: str, espn_s2=None, swid=None, username=None, password=None, debug=False):
         self.logger = Logger(name=f'{sport} league', debug=debug)
         self.league_id = league_id
