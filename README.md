@@ -6,6 +6,11 @@
 This package uses ESPN's Fantasy API to extract data from any public or private league for **Fantasy Football and Basketball**.  
 Please feel free to make suggestions, bug reports, and pull request for features or fixes!
 
+## This fork requires league_id, SWID and ESPN_S2 and is instantiated in __main__ by 
+```
+league = League(league_id=league_id, year=2020, espn_s2 = espn_s2, swid = swid)
+```
+
 This package was inspired and based off of [rbarton65/espnff](https://github.com/rbarton65/espnff).
 
 ## Installing
